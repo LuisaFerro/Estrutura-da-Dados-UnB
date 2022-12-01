@@ -37,8 +37,10 @@ def insere(lista,item,pos):
     
     raise ValueError('Posição inválida') #pois o código funciona caso coloque um valor de append válido. Se não, dará erro
 
-    
-        
+def len_lista(lista):
+    if lista:
+        return 1 + len(lista(lista.prox))
+    return 0    
 
 # item = Item(1)
 # item2 = Item(2,item)
