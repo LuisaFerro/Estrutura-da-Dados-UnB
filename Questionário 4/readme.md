@@ -7,3 +7,6 @@
 
 **Aplicação de recursividade**
 > Lista encadeada tem a ver com a alocação dinâmica de memória; É necessário saber o ítem e seu sucesso
+
+**Estudo de casos complexos com a recursão**
+https://panda.ime.usp.br/pythonds/static/pythonds_pt/04-Recursao/11-programacaoDinamica.html
