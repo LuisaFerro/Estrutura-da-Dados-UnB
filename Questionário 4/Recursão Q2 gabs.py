@@ -37,14 +37,15 @@ def jogoRec(indexCabeca,indexCauda,acao):
         return 0
 
     if memoria[indexCabeca][indexCauda] != None:
-        # print(memoria)
-        memoria[indexCabeca][indexCauda]    
+        print(memoria)
+        return memoria[indexCabeca][indexCauda]
 
     if acao == 'P': #incluir algum numero na soma
         escolheCabeca = numeros[indexCabeca] + jogoRec(indexCabeca+1,indexCauda,'D')
         escolheCauda = numeros[indexCauda] + jogoRec(indexCabeca,indexCauda-1,'D')
 
-    elif acao == 'D':
+    else:
+    # elif acao == 'D':
         escolheCabeca = jogoRec(indexCabeca+1,indexCauda,'P')
         escolheCauda = jogoRec(indexCabeca,indexCauda-1,'P')
         

@@ -71,6 +71,7 @@ def sabacchard(L, n):
         # forem diferentes de None, então o valor já foi calculado
         # e pode ser retornado
         if pd[ini][fim] != None:
+            print(pd)
             return pd[ini][fim]
  # Se tipo for igual a 1, a escolha é para pontuar
         if tipo == 1:
@@ -100,7 +101,7 @@ def sabacchard(L, n):
     # 3 - 1 para indicar que irá pontuar ou 0 para indicar que irá descartar
     return solucao(0, n - 1, 1)
 
-# N = int(input())
-# cartas = list(map(int, input().split()))
-# resposta = sabacchard(cartas, N)
-# print(resposta)
+N = int(input())
+cartas = list(map(int, input().split()))
+resposta = sabacchard(cartas, N)
+print(resposta)
