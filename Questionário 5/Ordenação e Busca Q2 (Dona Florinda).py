@@ -60,7 +60,6 @@ def ordenaPeso(difAltura,pesos,informacoes,quantidade,goal = 75):
     for i in difAltura:
         if primeiro == i: #repetindo elemento
             diferenca = fabs(informacoes[i][3]-goal)
-            for i in
 
         for i in diferencasOrd:
             index = diferencas.index(i)
