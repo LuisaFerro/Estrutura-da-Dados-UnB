@@ -35,19 +35,20 @@ def inorder(raiz):
         print(raiz.dado)
         inorder(raiz.dir)
 
-def pororder(raiz):
+def posorder(raiz):
     if raiz:
-        pororder(raiz.esq)
-        pororder(raiz.dir)
+        posorder(raiz.esq)
+        posorder(raiz.dir)
         print(raiz.dado)
 
-# raiz = ArvoreBinariaBusca(50)
+raiz = ArvoreBinariaBusca(50)
 
-# raiz = insere(raiz,ArvoreBinariaBusca(17))
-# raiz = insere(raiz,ArvoreBinariaBusca(72))
-# raiz = insere(raiz,ArvoreBinariaBusca(12))
-# raiz = insere(raiz,ArvoreBinariaBusca(23))
+raiz = insere(raiz,ArvoreBinariaBusca(17))
+raiz = insere(raiz,ArvoreBinariaBusca(72))
+raiz = insere(raiz,ArvoreBinariaBusca(12))
+raiz = insere(raiz,ArvoreBinariaBusca(23))
 
 # print(f'altura {raiz.altura()}')
 
+inorder(raiz)
 
