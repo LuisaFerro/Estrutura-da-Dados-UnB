@@ -1,5 +1,4 @@
 lista = []
-deuRuim = False
 
 class ArvoreBinaria():
     def __init__(self, dado, esq = None, dir = None):
@@ -14,22 +13,17 @@ def inorder(raiz):
         inorder(raiz.esq)
         lista.append(raiz.dado)
         inorder(raiz.dir)
-    else:
-        lista.append(0)
 
 def constituiArvoreBinariaDeBusca(raiz):
     global lista
-    global deuRuim
     
     inorder(raiz)
     listaOrdenada = lista[:]
-    listaOrdenadaReverse = lista[:]
     listaOrdenada.sort()
-    listaOrdenadaReverse.sort(reverse=True)
 
     print(lista)
     
-    if lista == listaOrdenada or lista == listaOrdenadaReverse:
+    if lista == listaOrdenada: 
         lista = []
         return True
     else:
