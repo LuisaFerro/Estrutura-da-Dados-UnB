@@ -22,5 +22,9 @@ Class DFSGraph(Graph): -> a classe DFSGraph HERDOU de Graph todos os atributos
 OBS: O super serve para - em uma relação de herança entre uma classe Base e outra Derivada - permitir que a classe Derivada se refira explicitamente à classe Base.
 
 O super não serve somente para o construtor, é claro: qualquer método da classe Base pode ser chamado dessa forma pela classe Derivada:
+
+______________________________________________________________________________________
+
+Sendo pytohn fracamente tipada, n precisa-se definir o tipo das variáveis, como em C++, no começo. Sendo assim.
     
 
