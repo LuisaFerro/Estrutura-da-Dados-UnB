@@ -22,14 +22,52 @@ def bfs(start): #em que o start é o vertice do qual se começa a busca em largu
 #acima temos a busca em largura, ou seja, mostra todos que estão conectados ao elemento em 1 salto, 2 saltos, 3 saltos, etc
 
 g = Graph()
-v = g.getVertex(0)
-bfs(v)
 
-for v in g:
-    print(v)
+# g.addEdge(0,1,5)
+# g.addEdge(0,5,2)
+# g.addEdge(1,2,4)
+# g.addEdge(2,3,9)
+# g.addEdge(3,4,7)
+# g.addEdge(3,5,3)
+# g.addEdge(4,0,1)
+# g.addEdge(5,2,1)
+# g.addEdge(5,4,8)
+
+g.addEdge(2,1)
+g.addEdge(2, 3)
+g.addEdge(2, 4)
+g.addEdge(3, 2)
+g.addEdge(3, 5)
+g.addEdge(3, 6)
+g.addEdge(4, 2)
+g.addEdge(4, 7)
+g.addEdge(4, 8)
+g.addEdge(5, 3)
+g.addEdge(6, 3)
+g.addEdge(7, 4)
+g.addEdge(7, 9)
+g.addEdge(8, 4)
+g.addEdge(9, 7)
+
+a = g.getVertex(9)
+bfs(a)
+
+print(g.getVertex(1))
+# type(g.getVertex(0)) == 
+
+# print(v
+# print('isso é v:',v)
+# bfs(v)
+
+# for v in g:
+#     print(f'dist de {v.getId()} até 0 é {v.getDistance()}')
+
+# meuvertex = g.getVertex(1)
+# print(meuvertex.getDistance())
 
 
-class DFSGraph(): 
+
+class DFSGraph(Graph): 
     def __init__(self) -> None:
         super().__init__()
         self.time = 0
